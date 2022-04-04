@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     console.log(file);
     res.status(200).json(file);
   } catch (err) {
-    res.status(500).json(err);
+    // res.status(500).json(err);
   }
 });
 
