@@ -6,8 +6,8 @@ const Files = require("../models/Files");
 router.get("/", async (req, res) => {
   try {
     const file = await Files.find();
-
-    res.status(200).json("hi");
+    console.log(file);
+    res.status(200).json(file);
   } catch (err) {
     res.status(500).json(err);
   }
